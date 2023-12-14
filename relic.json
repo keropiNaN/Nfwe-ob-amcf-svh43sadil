@@ -1,0 +1,83 @@
+{
+	"content": [{
+			"id": 0,
+			"eng": "Band of Sizzling Thunder",
+			"pt": "Banda Trovão Crepitante"
+		},
+		{
+			"id": 2,
+			"eng": "Champion of Streetwise Boxing",
+			"pt": "Campeã de Boxe de Rua"
+		},
+		{
+			"id": 3,
+			"eng": "Eagle of Twilight Line",
+			"pt": "Águia da Linha do Crepúsculo"
+		},
+		{
+			"id": 4,
+			"eng": "Firesmith of Lava-Forging",
+			"pt": "Artesão de Fogo da Forja de Lava"
+		},
+		{
+			"id": 5,
+			"eng": "Genius of Brilliant Stars",
+			"pt": "Gênio das Estrelas Brilhantes"
+		},
+		{
+			"id": 6,
+			"eng": "Guard of Wuthering Snow",
+			"pt": "Guarda da Neve Uivante"
+		},
+		{
+			"id": 7,
+			"eng": "Hunter of Glacial Forest",
+			"pt": "Caçador da Floresta Glacial"
+		},
+		{
+			"id": 8,
+			"eng": "Knight of Purity Palace",
+			"pt": "Cavaleira do Palácio da Pureza"
+		},
+		{
+			"id": 9,
+			"eng": "Longevous Disciple",
+			"pt": "Discípula Longeva"
+		},
+		{
+			"id": 10,
+			"eng": "Messenger Traversing Hackerspace",
+			"pt": "Mensageira Atravessando o Hackerspace"
+		},
+		{
+			"id": 11,
+			"eng": "Musketeer of Wild Wheat",
+			"pt": "Mosqueteira do Trigo Selvagem"
+		},
+		{
+			"id": 12,
+			"eng": "Passerby of Wandering Cloud",
+			"pt": "Transeunte da Nuvem Errante"
+		},
+		{
+			"id": 13,
+			"eng": "Prisoner in Deep Confinement",
+			"pt": "Prisioneiro em Confinamento Profundo"
+		},
+		{
+			"id": 14,
+			"eng": "The Ashblazing Grand Duke",
+			"pt": "Grão-Duque em Brasas"
+		},
+		{
+			"id": 15,
+			"eng": "Thief of Shooting Meteor",
+			"pt": "Ladrão da Chuva de Meteoros"
+		},
+		{
+			"id": 16,
+			"eng": "Wastelander of Banditry Desert",
+			"pt": "Andarilho do Deserto da Bandidagem"
+		}
+	]
+}
