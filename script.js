@@ -50,7 +50,7 @@ function criarDIV2(pos){
   div.style.height = '500px';
   div.style.position = 'absolute';	
   div.style.top = '20%';
-  div.style.left = '42%';
+  div.style.left = '0%';
   div.id ="popInfo";
   div.innerHTML +=grido; 
   div.addEventListener ("click", removeDIV);
@@ -105,7 +105,7 @@ function criarDIV(pos){
   div.style.height = '500px';
   div.style.position = 'absolute';	
   div.style.top = '20%';
-  div.style.left = '42%';
+  div.style.left = '0%';
   div.id ="popInfo";
   div.innerHTML +=grido; 
   div.addEventListener ("click", removeDIV);
