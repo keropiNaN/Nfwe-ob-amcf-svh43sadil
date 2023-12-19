@@ -1,0 +1,251 @@
+@font-face {font-family: DDIN; src:url("DIN.otf");}
+@font-face {font-family: DDIN; font-weight:bold; src:url("DINCondensed-Bold.otf");}
+
+
+body{
+	background-image: url(imgs/bg/bg1.jpg);
+	font-family:DDIN, DIN;
+	color: white;
+	backdrop-filter: blur(5px);
+	margin:0;
+	letter-spacing: 2px;
+}
+
+#Geral{
+	width:100%;
+	min-height:100vh;
+}
+
+#topo{
+	height:30px;
+	width:100%;
+	display: grid;
+    justify-items: center;
+}
+#menu{
+	height:inherit;
+	min-width:50vh;
+	max-width:70vh;
+	background-color:#342895;
+	border-radius: 0px 0px 10px 10px;
+	margin: 0 auto;
+	display: grid; 
+	grid-template-columns: 1fr 1fr 1fr 1fr; 
+	grid-template-rows: 1fr; 
+	gap: 0px 0px; 
+	grid-template-areas: 
+		"persoangens reliquias ornamentos analise"; 
+	justify-items: center;
+	box-shadow: 5px 2px 5px #20021e, 5px 2px 5px #20021e;
+}
+.persoangens { grid-area: persoangens; }
+.reliquias { grid-area: reliquias; }
+.ornamentos { grid-area: ornamentos; }
+.analise { grid-area: analise; }
+
+
+
+#menu > div {
+  margin-top: 5px;
+}
+
+#container{
+	width: 100%;
+	min-height: 95vh;
+	position: relative;
+}
+#bloco_superior{
+width: 50%;
+  min-height: 90vh;
+  background-color: #20021e;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 15px;
+  
+  background-color: #1E1B46;
+  border-bottom-style: solid;
+  border: 10px;
+  box-shadow: 5px 2px 5px #20021e, 10px 0px 0px 15px #342895,-10px 0px 0px 15px #342895
+  
+}
+
+#area_char{
+	text-align:center;
+	padding-top: 15px;
+}
+@media (max-width: 700px) {
+#area_char > img{
+	max-width:50px;
+}
+}
+@media (min-width: 700px) {
+#area_char > img {
+	max-width:90px;
+ }
+}
+
+
+
+
+#popInfo  img {
+	width :60px;
+}
+
+#popInfo {
+  display: grid; 
+  grid-auto-columns: 1fr; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.1fr 0.9fr 0.9fr 1.3fr 1.3fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "NomeChar"
+    "Cones"
+    "reliquias"
+    "Area_sts"
+    "area_substs"; 
+	background-color: #1E1B46;
+	box-shadow: 5px 2px 5px #20021e;
+	border-style: solid;
+	border-color: #2943ce;
+}
+.NomeChar { 
+  grid-area: NomeChar; 
+  text-align: center;
+  color: white;
+  letter-spacing: 5;
+  text-transform: capitalize;
+  font-size:25px;
+  box-shadow: 0px 2px 5px #20021e;
+  height: fit-content;
+  padding-bottom: 5px;
+}
+.Cones { 
+  grid-area: Cones; 
+  rid-area: Cones;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#img_ouro {
+  border-style: solid;
+  border-color: #FFF8BF;
+  border-radius: 10px;
+  background-color:rgba(255, 227, 77, 0.749);
+  box-shadow: 2px 2px 8px #ffd700;
+}
+
+#img_prata {
+  border-style: solid;
+  border-color: #cdcdcd;
+  border-radius: 10px;
+  background-color: #b3b3b3;
+  box-shadow: 2px 2px 8px #e0e0e0;
+}
+
+#img_bronze {
+  border-style: solid;
+  border-color: #d7845b;
+  border-radius: 10px;
+  background-color: #cd6532;
+  box-shadow: 2px 2px 8px #b04319;
+}
+
+
+.infoReliquias { 
+  grid-area: reliquias; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  }
+ 
+.infoReliquias img {
+  width:50px;
+  border-style: solid;
+  border-radius: 40px;
+  padding: 5px;
+  border-color: white;
+  background-color: white;
+  box-shadow: 2px 2px 5px aliceblue;
+} 
+
+.Area_sts {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "asts_titulo"
+    "asts_conteudo"; 
+  grid-area: Area_sts;
+  box-shadow: 0px -2px 5px #20021e;
+  margin-top: 10px;
+}
+.asts_titulo { 
+grid-area: asts_titulo;
+text-align: center;
+padding-top:5px;
+}
+.asts_conteudo {
+  display: grid; 
+  grid-template-columns: 0.3fr 1.7fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "main_corpo_ico mian_corpo_descri"
+    "main_pes_ico main_pes_descri"
+    "mian_esfera_ico main_esfera_descri"
+    "main_corda_ico main_corda_descri"; 
+  grid-area: asts_conteudo; 
+}
+
+.asts_conteudo img{
+	width:40px;
+}
+
+.main_corpo_ico { grid-area: main_corpo_ico; }
+.mian_corpo_descri { grid-area: mian_corpo_descri; }
+.main_pes_ico { grid-area: main_pes_ico; }
+.main_pes_descri { grid-area: main_pes_descri; }
+.main_esfera_descri { grid-area: main_esfera_descri; }
+.mian_esfera_ico { grid-area: mian_esfera_ico; }
+.main_corda_ico { grid-area: main_corda_ico; }
+.main_corda_descri { grid-area: main_corda_descri; }
+
+.area_substs {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 0.5fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "ass_titulo"
+    "ass_conteudo"; 
+  grid-area: area_substs; 
+}
+.ass_titulo { 
+  grid-area: ass_titulo; 
+  text-align: center;
+  padding-top: 5px
+}
+
+.ass_conteudo {
+  display: grid; 
+  grid-template-columns: 0.3fr 1.7fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "sub_corpo_ico sub_corpo_descri"
+    "sub_pes_ico sub_pes_descri"
+    "sub_esfera_ico sub_esfera_descri"
+    "sub_corda_ico sub_corda_descri"; 
+  grid-area: ass_conteudo; 
+}
+.sub_corpo_ico { grid-area: sub_corpo_ico; }
+.sub_corpo_descri { grid-area: sub_corpo_descri; }
+.sub_pes_ico { grid-area: sub_pes_ico; }
+.sub_pes_descri { grid-area: sub_pes_descri; }
+.sub_esfera_ico { grid-area: sub_esfera_ico; }
+.sub_esfera_descri { grid-area: sub_esfera_descri; }
+.sub_corda_ico { grid-area: sub_corda_ico; }
+.sub_corda_descri { grid-area: sub_corda_descri; }
