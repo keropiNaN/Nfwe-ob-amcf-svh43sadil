@@ -49,7 +49,7 @@ function criarDIV2(pos){
   div.style.width = '300px';
   div.style.height = '500px';
   div.style.position = 'absolute';	
-  div.style.top = '20%';
+  div.style.top = '21%';
   div.style.left = '25%';
   div.id ="popInfo";
   div.innerHTML +=grido; 
