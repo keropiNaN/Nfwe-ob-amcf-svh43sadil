@@ -104,8 +104,8 @@ function criarDIV(pos){
   div.style.width = '300px';
   div.style.height = '500px';
   div.style.position = 'absolute';	
-  div.style.top = y+'px';
-  div.style.left = x+'px';
+  div.style.top = '20%';
+  div.style.left = '42%';
   div.id ="popInfo";
   div.innerHTML +=grido; 
   div.addEventListener ("click", removeDIV);
