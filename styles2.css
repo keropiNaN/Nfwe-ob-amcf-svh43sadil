@@ -66,13 +66,14 @@ width: 50%;
   background-color: #1E1B46;
   border-bottom-style: solid;
   border: 10px;
-  box-shadow: 5px 2px 5px #20021e, 10px 0px 0px 15px #342895,-10px 0px 0px 15px #342895
-  
+  box-shadow: 5px 2px 5px #20021e, 10px 0px 0px 15px #342895,-10px 0px 0px 15px #342895;
+  z-index: 2 ; 
 }
 
 #area_char{
 	text-align:center;
 	padding-top: 15px;
+	z-index:3;
 }
 @media (max-width: 700px) {
 #area_char > img{
@@ -108,6 +109,7 @@ width: 50%;
 	box-shadow: 5px 2px 5px #20021e;
 	border-style: solid;
 	border-color: #2943ce;
+	z-index:4;
 }
 .NomeChar { 
   grid-area: NomeChar; 

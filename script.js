@@ -58,6 +58,7 @@ function criarDIV2(pos){
   populateInfo(pos);
   
 }
+
 function criarDIV(pos){
 	
 	const grido = `
@@ -99,9 +100,11 @@ function criarDIV(pos){
 	const x = event.clientX;
 	const y = event.clientY;
 	const div = document.createElement("div");
-//	console.log(pos_x);
-  div.style.width = '100%';
-  div.style.height = '100%';
+  let Ssize = screen.height;	
+  let pTop = Ssize * 0.3;	
+  console.log(pTop);
+  div.style.marginTop = pTop;
+  div.style.marginLeft = '50%';
   div.style.display = 'grid';
   div.style.placeItems = 'center';
   div.style.position = 'absolute';	
