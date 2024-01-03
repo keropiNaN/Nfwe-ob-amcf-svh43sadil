@@ -144,7 +144,7 @@ let corda;
 let artifact;
 
 function populateInfo(pos){
-	fetch("https://raw.githubusercontent.com/keropiNaN/Nfwe-ob-amcf-svh43sadil/main/dataAuto.json")
+	fetch("dataAuto.json")
     .then((response) => response.json())
     .then((json) => {
 	Nombre = json.content[pos].Char;
