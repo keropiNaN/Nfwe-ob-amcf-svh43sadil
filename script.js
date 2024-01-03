@@ -2,7 +2,9 @@
 
 function bigImg(x) {
 	name = x+"2.png"
+	console.log(name);
 	document.getElementById(x).src = "imgs/char/"+name;
+	
 }
 
 function normalImg(x) {
@@ -46,7 +48,7 @@ function criarDIV2(pos){
 	const pos_x = x+'px';
 	const div = document.createElement("div");
 	console.log(pos_x);
-  div.style.width = '300px';
+  div.style.width = '350px';
   div.style.height = '500px';
   div.style.position = 'absolute';	
   div.style.top = '20%';
@@ -62,34 +64,44 @@ function criarDIV2(pos){
 function criarDIV(pos){
 	
 	const grido = `
-  <div id="popInfo" style="width: 300px; height:500px; position: absolute;">
+  <div id="popInfo" style="width: 350px; height:500px; position: absolute;">
   <div class="NomeChar"></div>
-  <div class="Cones"></div>
+  <div class="Cones">
+	<div class="Cone1" style="position: relative;">
+		<div class="cn1" style="position: absolute;top: 0;/*! right: 1px; */border-style: solid;border-radius: 5px;width: 15px;text-align: center;background-color: #1e1b46;border-color: #fff8bf;">1</div>
+	</div>
+	<div class="Cone2" style="position: relative;">
+		<div class="cn2" style="position: absolute;top: 0;/*! right: 1px; */border-style: solid;border-radius: 5px;width: 15px;text-align: center;background-color: #1e1b46;border-color: #cdcdcd;">2</div>
+	</div>
+	<div class="Cone3" style="position: relative;">
+		<div class="cn3" style="position: absolute;top: 0;/*! right: 1px; */border-style: solid;border-radius: 5px;width: 15px;text-align: center;background-color: #1e1b46;border-color: #d7845b;">3</div>
+	</div>
+  </div>
   <div class="inforeliquias"></div>
   <div class="Area_sts">
     <div class="asts_titulo">Status Principais</div>
     <div class="asts_conteudo">
       <div class="main_corpo_ico"><img src="imgs/ico/corpo.png" style="width: 30px; padding-left:10px;"></img></div>
-      <div class="main_corpo_descri" style="display: flex;align-items: center;font-size: 10px;"></div>
+      <div class="main_corpo_descri" style="display: flex;align-items: center;font-size: 12px;"></div>
       <div class="main_pes_ico"><img src="imgs/ico/pe.png" style="width: 30px; padding-left:10px;"></img></div>
-      <div class="main_pes_descri" style="display: flex;align-items: center;font-size: 10px;"></div> 
-      <div class="main_esfera_descri" style="display: flex;align-items: center;font-size: 10px;"></div>
+      <div class="main_pes_descri" style="display: flex;align-items: center;font-size: 12px;"></div> 
+      <div class="main_esfera_descri" style="display: flex;align-items: center;font-size: 12px;"></div>
       <div class="mian_esfera_ico"><img src="imgs/ico/esfera.png" style="width: 30px; padding-left:10px;"></img></div>
       <div class="main_corda_ico"><img src="imgs/ico/corda.png" style="width: 30px; padding-left:10px;"></img></div>
-      <div class="main_corda_descri" style="display: flex;align-items: center;font-size: 10px;"></div>
+      <div class="main_corda_descri" style="display: flex;align-items: center;font-size: 12px;"></div>
     </div>
   </div>
   <div class="area_substs">
     <div class="ass_titulo">Status Secundarios</div>
     <div class="ass_conteudo">
       <div class="sub_corpo_ico"><img src="imgs/ico/corpo.png" style="width: 30px; padding-left:10px;"></div>
-      <div class="sub_corpo_descri" style="display: flex;align-items: center;font-size: 10px;"></div>
+      <div class="sub_corpo_descri" style="display: flex;align-items: center;font-size: 12px;"></div>
       <div class="sub_pes_ico"><img src="imgs/ico/pe.png" style="width: 30px; padding-left:10px;"></div>
-      <div class="sub_pes_descri" style="display: flex;align-items: center;font-size: 10px;"></div>
+      <div class="sub_pes_descri" style="display: flex;align-items: center;font-size: 12px;"></div>
       <div class="sub_esfera_ico"><img src="imgs/ico/esfera.png" style="width: 30px; padding-left:10px;"></div>
-      <div class="sub_esfera_descri" style="display: flex;align-items: center;font-size: 10px;"></div>
+      <div class="sub_esfera_descri" style="display: flex;align-items: center;font-size: 12px;"></div>
       <div class="sub_corda_ico"><img src="imgs/ico/corda.png" style="width: 30px; padding-left:10px;"></div>
-      <div class="sub_corda_descri" style="display: flex;align-items: center;font-size: 10px;"></div>
+      <div class="sub_corda_descri" style="display: flex;align-items: center;font-size: 12px;"></div>
     </div>
   </div></div>`;
 	
@@ -101,7 +113,7 @@ function criarDIV(pos){
 	const y = event.clientY;
 	const div = document.createElement("div");
   let Ssize = screen.height;	
-  let pTop = Ssize * 0.4;	
+  let pTop = Ssize * 0.3;	
   console.log(pTop);
   div.style.marginTop = pTop;
   div.style.marginLeft = '50%';
@@ -225,11 +237,11 @@ function populateCone(c1,c2,c3){
 	Cone1 = json.content[c1].pt;
 	Cone2 = json.content[c2].pt;
 	Cone3 = json.content[c3].pt;
-	const coneIcoArea = document.querySelector('.Cones');
-	const coneIcoArea2 = document.querySelector('.Cones');
-	const coneIcoArea3 = document.querySelector('.Cones');
+	const coneIcoArea = document.querySelector('.Cone1');
+	const coneIcoArea2 = document.querySelector('.Cone2');
+	const coneIcoArea3 = document.querySelector('.Cone3');
 	const reliquiaArea = document.querySelector('.infoReliquias');
-	
+		
 	const ima = document.createElement('img');
 	ima.id = "img_ouro";
 	ima.src = "imgs/cone/"+c1+".png";
