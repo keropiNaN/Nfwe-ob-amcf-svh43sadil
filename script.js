@@ -98,7 +98,7 @@ function criarDIV(pos){
     </div>
   </div>
   <div class="area_substs">
-    <div class="ass_titulo">Status Secundarios</div>
+    <div class="ass_titulo">Status Secundários</div>
     <div class="ass_conteudo">
       <div class="sub_corpo_ico"><img src="imgs/ico/corpo.png" style="width: 30px; padding-left:10px;"></div>
       <div class="sub_corpo_descri" style="display: flex;align-items: center;font-size: 12px;"></div>
