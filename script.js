@@ -1,6 +1,6 @@
 window.onload = function(){
 let sheight = screen.height;
-	document.getElementById("bloco_superior").style.height = sheight * 0.8;
+	document.getElementById("bloco_superior").style.height = sheight * 0.7;
 	console.log(sheight);
 	
 }
