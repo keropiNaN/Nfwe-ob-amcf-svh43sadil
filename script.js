@@ -1,3 +1,9 @@
+window.onload = function(){
+let sheight = screen.height;
+	document.getElementById("bloco_superior").style.height = sheight * 0.8;
+	console.log(sheight);
+	
+}
 
 
 function bigImg(x) {
