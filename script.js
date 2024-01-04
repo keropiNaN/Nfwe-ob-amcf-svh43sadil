@@ -119,7 +119,7 @@ function criarDIV(pos){
 	const y = event.clientY;
 	const div = document.createElement("div");
   let Ssize = screen.height;	
-  let pTop = Ssize * 0.3;	
+  let pTop = Ssize * 0.5;	
   console.log(pTop);
   div.style.marginTop = pTop;
   div.style.marginLeft = '50%';
