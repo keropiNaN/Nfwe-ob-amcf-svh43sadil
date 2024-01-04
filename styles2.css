@@ -37,6 +37,7 @@ body{
 		"persoangens reliquias ornamentos analise"; 
 	justify-items: center;
 	box-shadow: 5px 2px 5px #20021e, 5px 2px 5px #20021e;
+	z-index:99;
 }
 .persoangens { grid-area: persoangens; }
 .reliquias { grid-area: reliquias; }
